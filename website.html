@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <script src="https://kit.fontawesome.com/308d9c254d.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0px 5px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+          .navbar{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              /* border: 4px solid blue; */
+              height: 10%;
+          }
+          .navbar__links{
+              display: flex;
+              font-size: 2.5vw;
+              gap:30px;
+
+          }
+          .navbar__logo{
+              font-size: 4vw;
+          }
+          .main{
+              height: 80%;
+              /* border:4px red solid; */
+              display: flex;
+          }
+          .main__text{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+          }
+          .main__pic img{
+              width: 50%;
+              /* border: 2px solid yellow; */
+          }
+          .main__pic{
+              width: 60%;
+          }
+          .main__text{
+              width: 40%;
+          }
+          .main__text-1{
+              font-size: 7vw;
+          }
+          .main__text-2,.main__text-3,.main__text-4{
+              font-size: 4vw;
+          }
+          .footer{
+              /* border: 4px solid darkgreen; */
+              height: 10%;
+              display: flex;
+              justify-content:end;
+              padding-right: 10%;
+              font-size: 5vh;
+              gap: 10px;
+          }
+          @media (max-width:480px) {
+            .navbar{
+                 justify-content: center;
+            }
+              .navbar__logo{
+                 font-size: 40px;
+              }
+              .navbar__links{
+                  display: none;
+              }
+              .main{
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+              }
+              .main__pic{
+                 margin-left: 100px;
+                
+              }
+              .main__pic img{
+                   border-radius: 100%;
+                 background-size: 100%;
+                 background-position: center;
+              }
+              .footer{
+                  gap: 0;
+                    justify-content:center;
+                     padding-right: 0;
+                       font-size: 3vh;
+                       padding-top: 10px;
+              }
+          }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar__logo">Rinky</div>
+        <div class="navbar__links">
+            <div class="navbar__links-1">Home</div>
+            <div class="navbar__links-2">Portfolio</div>
+            <div class="navbar__links-3">Contact</div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main__pic"><img src="rinky.jpg" alt=""></div>
+       <div class="main__text">
+            <div class="main__text-1">Hello🥰</div>
+            <div class="main__text-2">I'm Rinky🖤</div>
+            <div class="main__text-3">A Designer From🚓</div>
+            <div class="main__text-4">Bangladesh🏡</div>
+       </div>
+    </div>
+    <div class="footer">
+        <div class="footer__instagram"><i class="fa-brands fa-instagram"></i></div>
+        <div class="footer__twitter"><i class="fa-brands fa-twitter"></i></div>
+        <div class="footer__dribbble"><i class="fa-brands fa-dribbble"></i></div>
+        <div class="footer__behance"><i class="fa-brands fa-behance-square"></i></div>
+    </div>
+</body>
+</html>
